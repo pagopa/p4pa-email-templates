@@ -11,6 +11,10 @@ Documents are organized according to the following folder structure:
 
 Templates are created using [MJML](https://mjml.io/) markup language along with typescript files.
 
+## Use cases
+
+See [Confluence Page](ehttps://pagopa.atlassian.net/wiki/spaces/SPAC/pages/2916581443/Invio+Email#3.-Casi-d%E2%80%99uso)
+
 ## How to apply changes
 
 To edit them, you can choose among these following options:
