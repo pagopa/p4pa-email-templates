@@ -24,5 +24,5 @@ To generate the HTML output you need to install the following CLI tool:
 1. [MJML](https://www.npmjs.com/package/mjml) package:
 
 ```shell
-npm install -g mjml && mjml <MJML_INPUT_FILE> -o <OUTPUT_FILE>
+npm install -g mjml && mjml <MJML_INPUT_FILE> -o <OUTPUT_FILE> [--config.allowIncludes true]
 ```

@@ -1,0 +1,13 @@
+<mj-section css-class="section" padding-bottom="0px" padding-top="0px">
+  <mj-column>
+    <mj-divider
+      padding-top="60px"
+      padding-bottom="40px"
+      border-width="1px"
+      border-style="solid"
+      border-color="#E3E7EB"
+      css-class="divider"
+      padding="0px"
+    />
+  </mj-column>
+</mj-section>

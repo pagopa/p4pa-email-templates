@@ -1,0 +1,128 @@
+<mjml lang="it">
+  <mj-head>
+    <mj-title>Conferma il tuo indirizzo email</mj-title>
+    <mj-font
+      name="Titillium Web"
+      href="https://selfcare.pagopa.it/assets/font/selfhostedfonts.css"
+    />
+    <mj-attributes>
+      <mj-all font-family="Titillium Web, system-ui, sans-serif" />
+    </mj-attributes>
+    <mj-raw>
+      <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    </mj-raw>
+  </mj-head>
+  <mj-body css-class="mail-body">
+    <mj-include path="./style.css" type="css" />
+    <mj-wrapper padding-right="20px" padding-left="20px">
+      <!-- App IO Logo -->
+      <mj-include path="./partials/cie-logo.mjml" />
+      <mj-section css-class="section" padding="0px">
+        <mj-column>
+          <!-- Title & Main Message -->
+          <mj-text
+            css-class="title"
+            font-weight="bold"
+            align="left"
+            color="#17324D"
+            padding-left="0px"
+            padding-right="0px"
+          >
+            <!-- H4 Desktop (from MUI Italia)-->
+            <h1 id="main-title">
+              Ecco la tua ricevuta
+            </h1>
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="16px"
+            line-height="24px"
+            font-weight="regular"
+            align="left"
+            padding-top="0px"
+            padding-bottom="0px"
+            padding-left="0px"
+            padding-right="0px"
+            color="#17324D"
+          >
+            <p id="p-with-bottom-margin">Ciao $[debtorName],</p>
+            <p>
+              ecco la ricevuta del pagamento. Portala con te il giorno della richiesta o del rinnovo della tua Carta di Identità Elettronica (CIE).
+            </p>
+            <p>
+              Questo documento è valido nel Comune che hai scelto e non vale come prenotazione.
+            </p>
+          </mj-text>
+          <mj-text
+            css-class="text"
+            font-size="16px"
+            line-height="24px"
+            font-weight="regular"
+            align="left"
+            color="#17324D"
+            padding="0px"
+          >
+            <p id="section-title" style="font-size: 24px; padding: 15px 10px 0px 0px">
+              <strong>Cosa fare ora</strong>
+            </p>
+            <p id="paragraph-title">
+              <strong>Se hai già un appuntamento</strong>
+            </p>
+            <div>
+              <p>Presentati allo sportello il giorno e all'orario prenotati.</p>
+              <p>Porta con te:</p>
+              <ul>
+                  <li>la <strong>ricevuta</strong> allegata a questa email;</li>
+                  <li>un <strong>documento di identità</strong> in corso di validità;</li>
+                  <li>il Codice fiscale o la tessera Sanitaria;</li>
+                  <li>una fototessera recente;</li>
+                  <li>la vecchia Carta di Identità o la denuncia di smarrimento o furto.</li>
+              </ul>
+            </div>
+            <p id="paragraph-title">
+              <strong>Se non hai un appuntamento</strong>
+            </p>
+            <div>
+              <p>Visita il sito del tuo Comune o contattalo direttamente per verificare se è necessaria una prenotazione.</p>
+            </div>
+              <p id="paragraph-title">
+                <strong>Stai chiedendo la carta per un minore?</strong>
+              </p>
+            <div>
+              <p id="p-with-bottom-margin">Le condizioni e i documenti necessari potrebbero variare in base all'età: trovi più informazioni
+                <a
+                  href="https://www.cartaidentita.interno.gov.it/richiedi/rilascio-e-rinnovo-minorenni/"
+                  style="color: #0073e6"
+                  class="link"
+                >in questa pagina</a>.
+              </p>
+            </div>
+            <div>
+              <p id="p-with-bottom-margin">Per saperne di più sulla CIE e su cosa portare il giorno dell'appuntamento, visita il sito ufficiale.</p>
+            </div>
+          </mj-text>
+          <mj-button
+            font-family="Titillium Web, system-ui, sans-serif"
+            background-color="#0073E6"
+            font-size="16px"
+            font-weight="bold"
+            color="white"
+            align="left"
+            inner-padding="14px 24px"
+            border-radius="4px"
+            href="https://www.cartaidentita.interno.gov.it/richiedi/rilascio-e-rinnovo-in-italia/"
+            css-class="cta"
+            padding-left="0px"
+            padding-right="0px"
+          >
+            Vai al sito CIE
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <!-- Divider -->
+      <mj-include path="./partials/divider.mjml"/>
+      <!-- Footer -->
+      <mj-include path="./partials/footer-cie.mjml"/>
+    </mj-wrapper>
+  </mj-body>
+</mjml>
