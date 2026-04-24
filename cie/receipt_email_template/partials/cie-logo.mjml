@@ -4,7 +4,7 @@
       css-class="light-img"
       width="100px"
       align="left"
-      src="cid:cie-logo"
+      src="cid:cie-logo.png"
       padding-left="0"
     />
     <mj-raw>
@@ -13,7 +13,7 @@
         style="mso-hide: all; display: none; padding: 10px 0px"
       >
         <img
-          src="cid:cie-logo"
+          src="cid:cie-logo.png"
           width="100px"
           class="dark-img"
           style="display: none"
