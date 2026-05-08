@@ -8,12 +8,17 @@ Documents are organized according to the following folder structure:
         * index.html
         * index.mjml
         * attachments.txt
+        * attachments (folder)
+        * partials (folder)
+
+In attachments folder all attachment files are collected.
+In partials folder all reusable .mjml template are collected.
 
 Templates are created using [MJML](https://mjml.io/) markup language along with typescript files.
 
 ## Use cases
 
-See [Confluence Page](ehttps://pagopa.atlassian.net/wiki/spaces/SPAC/pages/2916581443/Invio+Email#3.-Casi-d%E2%80%99uso)
+See [Confluence Page](https://pagopa.atlassian.net/wiki/spaces/SPAC/pages/2916581443/Invio+Email)
 
 ## How to apply changes
 
