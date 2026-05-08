@@ -9,11 +9,10 @@ Documents are organized according to the following folder structure:
         * index.mjml
         * attachments.txt
         * attachments (folder)
-        * partials (folder)
 
 In attachments folder all attachment files are collected.
 
-In partials folder all reusable .mjml template are collected.
+In partials folder all reusable .mjml templates are collected; if positioned outside template folder, compilation command needs to take its position into account.
 
 Templates are created using [MJML](https://mjml.io/) markup language along with typescript files.
 
