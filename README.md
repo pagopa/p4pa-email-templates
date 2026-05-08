@@ -10,7 +10,7 @@ Documents are organized according to the following folder structure:
         * attachments.txt
         * attachments (folder)
 
-In attachments folder all attachment files are collected.
+Put inside attachments folder all the files referenced in attchments.txt file.
 
 In partials folder all reusable .mjml templates are collected; if positioned outside template folder, compilation command needs to take its position into account.
 
