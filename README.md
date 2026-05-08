@@ -4,6 +4,7 @@ This repo contains the mail template(s) override sent on behalf of PU based on t
 
 Documents are organized according to the following folder structure:
 * <BROKER_EXTERNAL_ID>
+    * partials (folder) 
     * <EMAIL_TEMPLATE_NAME>
         * index.html
         * index.mjml
@@ -12,7 +13,7 @@ Documents are organized according to the following folder structure:
 
 Put inside attachments folder all the files referenced in attchments.txt file.
 
-In partials folder all reusable .mjml templates are collected; if positioned outside template folder, compilation command needs to take its position into account.
+Put inside in partials folder all reusable .mjml templates; if positioned outside template folder, compilation command needs to take its position into account.
 
 Templates are created using [MJML](https://mjml.io/) markup language along with typescript files.
 
