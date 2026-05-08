@@ -4,16 +4,22 @@ This repo contains the mail template(s) override sent on behalf of PU based on t
 
 Documents are organized according to the following folder structure:
 * <BROKER_EXTERNAL_ID>
+    * partials (folder) 
     * <EMAIL_TEMPLATE_NAME>
         * index.html
         * index.mjml
         * attachments.txt
+        * attachments (folder)
+
+Put inside attachments folder all the files referenced in attchments.txt file.
+
+Put inside partials folder all reusable .mjml templates.
 
 Templates are created using [MJML](https://mjml.io/) markup language along with typescript files.
 
 ## Use cases
 
-See [Confluence Page](ehttps://pagopa.atlassian.net/wiki/spaces/SPAC/pages/2916581443/Invio+Email#3.-Casi-d%E2%80%99uso)
+See [Confluence Page](https://pagopa.atlassian.net/wiki/spaces/SPAC/pages/2916581443/Invio+Email)
 
 ## How to apply changes
 
