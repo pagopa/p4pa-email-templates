@@ -13,7 +13,7 @@ Documents are organized according to the following folder structure:
 
 Put inside attachments folder all the files referenced in attchments.txt file.
 
-Put inside partials folder all reusable .mjml templates; if positioned outside template folder, compilation command needs to take its position into account.
+Put inside partials folder all reusable .mjml templates.
 
 Templates are created using [MJML](https://mjml.io/) markup language along with typescript files.
 
