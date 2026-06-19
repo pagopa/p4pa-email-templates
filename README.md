@@ -10,12 +10,12 @@ Documents are organized according to the following folder structure:
         * index.mjml
         * attachments.txt
         * attachments (folder)
-        * _reusable_component (folder)
+        * _component (folder)
 
 Put inside attachments folder all the files referenced in attachments.txt file.
 
 Put inside "_common" folder all .mjml template partials reusable across all broker mjml-templates.
-Put inside "_reusable_component" folder all .mjml template partials reusable inside a single mjml-template.
+Put inside "_component" folder all .mjml template partials reusable inside a single mjml-template.
 
 Templates are created using [MJML](https://mjml.io/) markup language along with typescript files.
 
