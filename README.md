@@ -10,10 +10,13 @@ Documents are organized according to the following folder structure:
         * index.mjml
         * attachments.txt
         * attachments (folder)
+        * partials (folder)
 
 Put inside attachments folder all the files referenced in attchments.txt file.
 
-Put inside partials folder all reusable .mjml templates.
+Put inside partials folder all reusable .mjml templates:
+* for partials at <EMAIL_TEMPLATE_NAME> level, in CLI command only need to add option: --config.allowIncludes true
+* for partials at <BROKER_EXTERNAL_ID> level, in CLI command need to add both options: --config.allowIncludes true --config.includePath <PARTIALS_PATH> 
 
 Templates are created using [MJML](https://mjml.io/) markup language along with typescript files.
 
@@ -34,5 +37,9 @@ To generate the HTML output you need to install the following CLI tool:
 1. [MJML](https://www.npmjs.com/package/mjml) package:
 
 ```shell
-npm install -g mjml && mjml <MJML_INPUT_FILE> -o <OUTPUT_FILE> [--config.allowIncludes true]
+npm install -g mjml && mjml <MJML_INPUT_FILE> -o <OUTPUT_FILE> [--config.allowIncludes true --config.includePath <BROKER_PARTIALS_PATH>]
 ```
+
+Example:
+
+npm install -g mjml && mjml cie/INGESTION_PAGOPA_RT/index.mjml -o cie/INGESTION_PAGOPA_RT/index.html --config.allowIncludes true --config.includePath cie/partials
