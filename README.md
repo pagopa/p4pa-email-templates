@@ -4,19 +4,19 @@ This repo contains the mail template(s) override sent on behalf of PU based on t
 
 Documents are organized according to the following folder structure:
 * <BROKER_EXTERNAL_ID>
-    * partials (folder) 
+    * _common (folder) 
     * <EMAIL_TEMPLATE_NAME>
         * index.html
         * index.mjml
         * attachments.txt
         * attachments (folder)
-        * partials (folder)
+        * _common (folder)
 
-Put inside attachments folder all the files referenced in attchments.txt file.
+Put inside attachments folder all the files referenced in attachments.txt file.
 
-Put inside partials folder all reusable .mjml templates:
-* for partials at <EMAIL_TEMPLATE_NAME> level, in CLI command only need to add option: --config.allowIncludes true
-* for partials at <BROKER_EXTERNAL_ID> level, in CLI command need to add both options: --config.allowIncludes true --config.includePath <PARTIALS_PATH> 
+Put inside _common folder all reusable .mjml template partials:
+* for template partials reusable across all broker mjml-templates, put inside <BROKER_EXTERNAL_ID>/_common
+* for template partials reusable only in a specific mjml-template, put inside <BROKER_EXTERNAL_ID>/<EMAIL_TEMPLATE_NAME>/_common
 
 Templates are created using [MJML](https://mjml.io/) markup language along with typescript files.
 
@@ -37,9 +37,13 @@ To generate the HTML output you need to install the following CLI tool:
 1. [MJML](https://www.npmjs.com/package/mjml) package:
 
 ```shell
-npm install -g mjml && mjml <MJML_INPUT_FILE> -o <OUTPUT_FILE> [--config.allowIncludes true --config.includePath <BROKER_PARTIALS_PATH>]
+npm install -g mjml && mjml <MJML_INPUT_FILE> -o <OUTPUT_FILE> [--config.allowIncludes true --config.filePath <BROKER_BASE_PATH> --config.includePath <BROKER_COMMON_RELAVITE_PATH>]
 ```
+
+Link to mjml [command line options documentation](https://documentation.mjml.io/#command-line-interface).
+
+Link to mjml [shared partials best-practices documentation](nhttps://documentation.mjml.io/#best-practices-for-shared-partials).
 
 Example:
 
-npm install -g mjml && mjml cie/INGESTION_PAGOPA_RT/index.mjml -o cie/INGESTION_PAGOPA_RT/index.html --config.allowIncludes true --config.includePath cie/partials
+npm install -g mjml && mjml cie/INGESTION_PAGOPA_RT/index.mjml -o cie/INGESTION_PAGOPA_RT/index.html --config.allowIncludes true --config.filePath cie --config.includePath ./_common
