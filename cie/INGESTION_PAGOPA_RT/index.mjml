@@ -13,10 +13,10 @@
     </mj-raw>
   </mj-head>
   <mj-body css-class="mail-body">
-    <mj-include path="./INGESTION_PAGOPA_RT/style.css" type="css" />
+    <mj-include path="./style.css" type="css" />
     <mj-wrapper padding-right="20px" padding-left="20px">
       <!-- CIE Logo -->
-      <mj-include path="./_common/cie-logo.mjml"/>
+      <mj-include path="../_common/cie-logo.mjml"/>
       <mj-section css-class="section" padding="0px">
         <mj-column>
           <!-- Title & Main Message -->
@@ -120,9 +120,9 @@
         </mj-column>
       </mj-section>
       <!-- Divider -->
-      <mj-include path="./_common/divider.mjml"/>
+      <mj-include path="../_common/divider.mjml"/>
       <!-- Footer -->
-      <mj-include path="./_common/footer-cie.mjml"/>
+      <mj-include path="../_common/footer-cie.mjml"/>
     </mj-wrapper>
   </mj-body>
 </mjml>

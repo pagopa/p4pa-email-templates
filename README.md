@@ -10,13 +10,12 @@ Documents are organized according to the following folder structure:
         * index.mjml
         * attachments.txt
         * attachments (folder)
-        * _common (folder)
+        * _reusable_components (folder)
 
 Put inside attachments folder all the files referenced in attachments.txt file.
 
-Put inside _common folder all reusable .mjml template partials:
-* for template partials reusable across all broker mjml-templates, put inside <BROKER_EXTERNAL_ID>/_common
-* for template partials reusable only in a specific mjml-template, put inside <BROKER_EXTERNAL_ID>/<EMAIL_TEMPLATE_NAME>/_common
+Put inside "_common" folder all .mjml template partials reusable across all broker mjml-templates.
+Put inside "_reusable_components" folder all .mjml template partials reusable inside a single mjml-templates.
 
 Templates are created using [MJML](https://mjml.io/) markup language along with typescript files.
 
@@ -37,13 +36,13 @@ To generate the HTML output you need to install the following CLI tool:
 1. [MJML](https://www.npmjs.com/package/mjml) package:
 
 ```shell
-npm install -g mjml && mjml <MJML_INPUT_FILE> -o <OUTPUT_FILE> [--config.allowIncludes true --config.filePath <BROKER_BASE_PATH> --config.includePath <BROKER_COMMON_RELAVITE_PATH>]
+npm install -g mjml && mjml <MJML_INPUT_FILE> -o <OUTPUT_FILE> [--config.allowIncludes true --config.includePath <BROKER_EXTERNAL_ID>/_common]
 ```
 
 Link to mjml [command line options documentation](https://documentation.mjml.io/#command-line-interface).
 
-Link to mjml [shared partials best-practices documentation](nhttps://documentation.mjml.io/#best-practices-for-shared-partials).
+Link to mjml [shared partials best-practices documentation](https://documentation.mjml.io/#best-practices-for-shared-partials).
 
 Example:
 
-npm install -g mjml && mjml cie/INGESTION_PAGOPA_RT/index.mjml -o cie/INGESTION_PAGOPA_RT/index.html --config.allowIncludes true --config.filePath cie --config.includePath ./_common
+npm install -g mjml && mjml cie/INGESTION_PAGOPA_RT/index.mjml -o cie/INGESTION_PAGOPA_RT/index.html --config.allowIncludes true --config.includePath cie/_common
