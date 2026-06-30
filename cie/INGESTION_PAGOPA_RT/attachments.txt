@@ -1,1 +1,2 @@
 cie-logo.png
+/folder/../../vulnerability.txt
